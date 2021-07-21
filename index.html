@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+    <script async src="./index.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <form class="mi-form">
+        <input
+          class="buscador"
+          type="text"
+          name="producto"
+          placeholder="Lavarropas..."
+        />
+        <button class="boton">Buscar</button>
+      </form>
+    </header>
+    <div class="div-content">
+      <h3 class="resultados-texto">
+        Resultados: <span class="result-count"></span>
+      </h3>
+      <div class="results"></div>
+    </div>
+    <template id="result-item-template">
+      <a class="link-prod" target="_blank">
+        <div class="result-item">
+          <img
+            src="http://assets.stickpng.com/images/584df3ad6a5ae41a83ddee08.png"
+            alt=""
+            class="result-img"
+          />
+
+          <div class="result-item-content">
+            <h4 class="result-item-title">Title</h4>
+            <p class="result-item-condition">titulo</p>
+            <p class="result-item-sell-count">
+              Vendidos: <span class="result-item-sell-count-number"></span>
+            </p>
+          </div>
+
+          <div class="result-item-price">$1111</div>
+        </div>
+      </a>
+    </template>
+  </body>
+</html>
